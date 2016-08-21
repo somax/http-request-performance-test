@@ -84,7 +84,7 @@ function testRequest() {
         // console.log(`problem with request: ${e.message}`);
         // req = null;
 
-    });
+    })
 
     // write data to request body
     // req.write(postData);
@@ -97,7 +97,7 @@ function testRequest() {
         isTimeout = true;
         // remainderCount = reqCount - resCount;
         console.log('Time is out, wait for remainder...', reqCount - resCount);
-        finishTimer = setTimeout(forceExit, testTime + 5000);
+        finishTimer = setTimeout(forceExit, testTime + 2000);
         return;
     }
 }
